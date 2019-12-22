@@ -132,6 +132,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += device/oneplus/enchilada/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
@@ -190,8 +191,11 @@ VENDOR_SECURITY_PATCH := 2019-10-05
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += device/oneplus/enchilada/sepolicy/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/oneplus/enchilada/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/oneplus/enchilada/sepolicy/private
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
@@ -230,3 +234,4 @@ endif
 
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
+-include vendor/oneplus/enchilada/BoardConfigVendor.mk
