@@ -1102,6 +1102,14 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# Lights
+vendor/bin/hw/android.hardware.light@2.0-service
+vendor/etc/init/android.hardware.light@2.0-service.rc
+vendor/lib/hw/android.hardware.light@2.0-impl.so
+vendor/lib/hw/lights.sdm660.so
+vendor/lib64/hw/android.hardware.light@2.0-impl.so
+vendor/lib64/hw/lights.sdm660.so
+
 # Thermal
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-camera.conf
