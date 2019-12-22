@@ -75,6 +75,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.sensors.facing=false \
 	ro.vendor.sensors.cmc=false \
 	ro.vendor.sdk.sensors.gestures=false \
+	ro.vendor.sensors.sta_detect=true \
+    ro.vendor.sensors.pug=true \
 	rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so \
 	ro.vendor.audio.voice.volume.boost=manual
 
